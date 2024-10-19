@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import { scrollToSection } from "@/app/utilts";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -8,10 +9,16 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between sm:justify-center gap-x-8">
-        <div className="text-white text-2xl font-bold">FVD</div>
+        <div
+          className="text-white text-2xl font-bold"
+          onClick={scrollToSection("hero")}
+        >
+          FVD
+        </div>
 
         <div className="sm:hidden">
           <button
@@ -35,29 +42,27 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div
-          className={`hidden sm:flex items-center space-x-6`}
-        >
+        <div className="hidden sm:flex items-center space-x-6">
           <a
-            href="#"
+            onClick={scrollToSection("aboutUs")}
             className="text-white uppercase hover:text-gray-400 transition-colors"
           >
             About us
           </a>
           <a
-            href="#"
+            onClick={scrollToSection("howToBuy", -60)}
             className="text-white uppercase hover:text-gray-400 transition-colors"
           >
             How to buy
           </a>
           <a
-            href="#"
+            onClick={scrollToSection("tokenomics", -80)}
             className="text-white uppercase hover:text-gray-400 transition-colors"
           >
             Tokenomics
           </a>
           <a
-            href="#"
+            onClick={scrollToSection("social")}
             className="text-white uppercase hover:text-gray-400 transition-colors"
           >
             Social
@@ -66,16 +71,28 @@ const Navbar = () => {
       </div>
 
       <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
-        <a href="#" className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700">
+        <a
+          onClick={scrollToSection("aboutUs")}
+          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+        >
           About us
         </a>
-        <a href="#" className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700">
+        <a
+          onClick={scrollToSection("howToBuy", -60)}
+          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+        >
           How to buy
         </a>
-        <a href="#" className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700">
+        <a
+          onClick={scrollToSection("tokenomics", -80)}
+          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+        >
           Tokenomics
         </a>
-        <a href="#" className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700">
+        <a
+          onClick={scrollToSection("social")}
+          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+        >
           Social
         </a>
       </div>

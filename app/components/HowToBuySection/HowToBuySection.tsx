@@ -34,7 +34,7 @@ const HOW_TO_BUY_CONTENT = [
 
 export default function HowToBuySection() {
   return (
-    <section className={styles.root}>
+    <section className={styles.root} id="howToBuy">
       <p className={`textBlackBorder ${styles.title}`}>how to buy</p>
 
       <div className={styles.stepWrapper}>

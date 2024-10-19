@@ -60,3 +60,26 @@
 
   @apply border-black border-2;
 }
+
+.socialSection {
+  @apply absolute top-[82%] left-0;
+  @apply w-screen;
+
+  @apply 3xs:top-[82.5%];
+  @apply xs:top-[83%];
+  @apply mid-2xs:top-[83.5%];
+  @apply sm:top-[83%];
+  @apply lg:top-[84%];
+}
+
+.socialTitle {
+  @apply font-knewave text-white uppercase text-center text-[15px];
+
+  @apply 3xs:text-[26px];
+
+  @apply sm:text-[36px];
+
+  @apply md:text-[41px];
+
+  @apply 2xl:text-[61px];
+}

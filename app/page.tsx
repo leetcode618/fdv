@@ -8,6 +8,7 @@ import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import styles from "./homepage.module.scss";
 import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
 import TokenomicsSection from "./components/TokenomicsSection/TokenomicsSection";
+import { scrollToSection } from "./utilts";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           }}
         />
 
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} id="hero">
           <h1 className={`textWhiteBorder ${styles.pageTitle}`}>Lorem ipsum</h1>
           <h3 className={`textWhiteBorder ${styles.pageSubTitle}`}>
             dolor sit amet
@@ -35,7 +36,10 @@ export default function Home() {
             sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
             metus.
           </p>
-          <button className={styles.learnMoreBtn}>
+          <button
+            className={styles.learnMoreBtn}
+            onClick={scrollToSection("aboutUs", -150)}
+          >
             <p>learn more</p>
           </button>
         </section>
@@ -43,6 +47,14 @@ export default function Home() {
         <AboutUsSection />
         <HowToBuySection />
         <TokenomicsSection />
+
+        <section id="social" className={styles.socialSection}>
+          <p className={styles.socialTitle}>our social</p>
+          <div className="flex flex-row justify-center items-center">
+            <p>icon1</p>
+            <p>icon2</p>
+          </div>
+        </section>
       </div>
     </>
   );

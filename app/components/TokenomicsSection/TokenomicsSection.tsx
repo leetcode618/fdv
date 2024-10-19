@@ -9,7 +9,7 @@ import classNames from "classnames";
 
 export default function TokenomicsSection() {
   return (
-    <section className={styles.root}>
+    <section className={styles.root} id="tokenomics">
       <p className={`textBlackBorder ${styles.title}`}>tokenomics</p>
 
       <div className={styles.bubbleTop}>
