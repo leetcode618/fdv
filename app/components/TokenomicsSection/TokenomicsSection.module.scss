@@ -1,0 +1,73 @@
+.root {
+  @apply absolute top-[70%] right-0 w-[58%];
+  @apply min-h-[180px];
+}
+
+.title {
+  @apply font-knewave text-white uppercase text-center text-[10px];
+
+  @apply 3xs:text-[16px];
+
+  @apply sm:text-[26px];
+
+  @apply md:text-[36px];
+
+  @apply 2xl:text-[56px];
+}
+
+.bubbleTop {
+  @apply absolute top-[17%] left-[-6%] w-[87%];
+  @apply sm:top-[29%];
+  @apply md:top-[40%];
+  @apply 2xl:top-[66%];
+}
+
+.bubbleCenter {
+  @apply absolute top-[32%] right-[2%] w-[77%];
+  @apply sm:top-[57%];
+  @apply md:top-[71%];
+  @apply lg:top-[96%];
+  @apply 2xl:top-[148%];
+}
+
+.bubbleBottom {
+  @apply absolute top-[57%] left-[-2%] w-[80%];
+  @apply xs:top-[66%];
+  @apply mid-2xs:top-[76%];
+  @apply sm:top-[100%];
+  @apply md:top-[138%];
+  @apply lg:top-[178%];
+  @apply xl:top-[215%];
+  @apply 2xl:top-[275%];
+}
+
+.textInBubble {
+  @apply text-[5px] text-black font-boorsok w-[85%] max-w-[840px];
+
+  @apply xxs:text-[6px];
+
+  @apply mid-2xs:text-[8px];
+
+  @apply sm:text-[10px];
+
+  @apply md:text-[13px];
+
+  @apply lg:text-[17px];
+
+  @apply xl:text-[20px];
+
+  @apply 2xl:text-[25px];
+}
+
+.textTop {
+  @apply absolute top-[14%] left-[6%];
+}
+
+.textCenter {
+  @apply absolute bottom-[14%] left-[6%];
+}
+
+.textBottom {
+  @apply absolute bottom-[7%] left-[6%];
+  @apply 3xl:bottom-[16%];
+}

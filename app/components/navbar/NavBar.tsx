@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between sm:justify-center gap-x-8">
-        <div className="text-white text-2xl font-bold">MyWebsite</div>
+        <div className="text-white text-2xl font-bold">FVD</div>
 
         <div className="sm:hidden">
           <button

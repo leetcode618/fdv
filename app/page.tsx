@@ -2,30 +2,14 @@
 import Image from "next/image";
 import Navbar from "./components/navbar/NavBar";
 
-import { useEffect, useState } from "react";
 import fullPageBgr from "./images/background.png";
 
 import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import styles from "./homepage.module.scss";
 import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
-
-const MOBILE_BREAKPOINT = 540;
+import TokenomicsSection from "./components/TokenomicsSection/TokenomicsSection";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState<boolean>();
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
@@ -58,6 +42,7 @@ export default function Home() {
 
         <AboutUsSection />
         <HowToBuySection />
+        <TokenomicsSection />
       </div>
     </>
   );

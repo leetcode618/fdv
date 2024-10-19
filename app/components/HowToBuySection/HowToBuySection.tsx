@@ -39,7 +39,7 @@ export default function HowToBuySection() {
 
       <div className={styles.stepWrapper}>
         {HOW_TO_BUY_CONTENT.map((item, index) => (
-          <div className="relative">
+          <div className="relative" key={index}>
             <Image
               src={howToBuyBubble}
               alt="how-to-buy-bubble"
