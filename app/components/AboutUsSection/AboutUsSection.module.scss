@@ -1,0 +1,86 @@
+.aboutUsMonitorScreenSection {
+  @apply absolute right-[3%] top-[12.5%];
+
+  @apply xs:top-[14%];
+
+  @apply lg:top-[15%];
+
+  @apply xl:right-[8%];
+}
+
+.aboutUsScreen {
+  @apply w-[111px];
+
+  @apply 3xs:w-[150px];
+
+  @apply xxs:w-[200px];
+
+  @apply mid-xs:w-[250px];
+
+  @apply sm:w-[319px];
+
+  @apply md:w-[380px];
+
+  @apply lg:w-[480px];
+
+  @apply xl:w-[500px];
+
+  @apply 2xl:w-[600px];
+
+  @apply 3xl:w-[750px];
+}
+
+.aboutUsTitle {
+  @apply font-knewave text-white uppercase text-center text-[10px];
+
+  @apply 3xs:text-[16px];
+
+  @apply sm:text-[26px];
+
+  @apply md:text-[36px];
+
+  @apply 2xl:text-[56px];
+}
+
+.aboutUsDescription {
+  @apply w-full text-justify text-black;
+
+  @apply md:font-bold;
+}
+
+.aboutUsSpeech {
+  @apply absolute top-[22%] left-[9%];
+  @apply w-[80%];
+
+  @apply lg:w-[66%] lg:top-[23%] lg:left-[17%];
+}
+.aboutUsBubble {
+  @apply w-full;
+}
+.textInBubbleWrapper {
+  @apply absolute top-[14%] left-[6%] w-[90%];
+  @apply max-h-[calc(100%_-_15px)] overflow-auto;
+
+  @apply xs:max-h-[calc(100%_-_25px)];
+
+  @apply sm:max-h-[calc(100%_-_60px)];
+
+  @apply text-[5px];
+
+  @apply xxs:text-[6px];
+
+  @apply xs:text-[8px];
+
+  @apply sm:text-[10px];
+
+  @apply md:text-[12px];
+
+  @apply lg:text-[14px];
+
+  @apply xl:text-[20px];
+}
+
+.buyNowMeme {
+  @apply absolute top-[34.5%] left-[9%];
+  @apply w-[80%];
+}
