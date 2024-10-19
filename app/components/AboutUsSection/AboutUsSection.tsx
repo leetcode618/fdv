@@ -10,7 +10,7 @@ import styles from "./AboutUsSection.module.scss";
 
 export default function AboutUsSection() {
   return (
-    <section>
+    <>
       <div className={styles.aboutUsSpeech}>
         <div className="relative">
           <Image
@@ -22,7 +22,7 @@ export default function AboutUsSection() {
           />
 
           <p
-            className={`pageDescription ${classNames(
+            className={`pageDescription textInBubble ${classNames(
               styles.aboutUsDescription,
               styles.textInBubbleWrapper
             )}`}
@@ -30,15 +30,15 @@ export default function AboutUsSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
             tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
             sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.
+            metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer id tristique eros. Nunc a augue vel ipsum porttitor
+            pellentesque a eget sapien. Ut eu turpis feugiat, porttitor magna
+            tincidunt, viverra metus.
           </p>
         </div>
       </div>
 
-      <div className={styles.aboutUsMonitorScreenSection}>
+      <section className={styles.aboutUsMonitorScreenSection}>
         <div className="relative">
           <Image
             src={aboutUsMonitorScreen}
@@ -57,7 +57,7 @@ export default function AboutUsSection() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       <Image
         src={buyNowMeme}
@@ -66,6 +66,6 @@ export default function AboutUsSection() {
         quality={100}
         className={styles.buyNowMeme}
       />
-    </section>
+    </>
   );
 }

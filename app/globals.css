@@ -51,3 +51,19 @@ body {
 
   @apply w-[50%];
 }
+
+.textInBubble {
+  @apply text-[5px];
+
+  @apply xxs:text-[6px];
+
+  @apply xs:text-[8px];
+
+  @apply sm:text-[10px];
+
+  @apply md:text-[12px];
+
+  @apply lg:text-[14px];
+
+  @apply xl:text-[20px];
+}

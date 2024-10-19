@@ -25,6 +25,7 @@ const config: Config = {
         "3xs": "300px",
         xxs: "360px",
         xs: "412px",
+        "mid-2xs": '470px',
         'mid-xs': "576px",
         sm: "640px",
         md: "768px",

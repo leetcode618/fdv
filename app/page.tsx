@@ -7,6 +7,7 @@ import fullPageBgr from "./images/background.png";
 
 import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import styles from "./homepage.module.scss";
+import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
 
 const MOBILE_BREAKPOINT = 540;
 
@@ -56,6 +57,7 @@ export default function Home() {
         </section>
 
         <AboutUsSection />
+        <HowToBuySection />
       </div>
     </>
   );

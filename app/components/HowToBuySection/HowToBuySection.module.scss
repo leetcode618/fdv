@@ -1,0 +1,44 @@
+.root {
+  @apply absolute top-[48%] left-0 w-full;
+}
+
+.title {
+  @apply font-knewave text-white uppercase text-center text-[20px];
+
+  @apply 3xs:text-[26px];
+
+  @apply sm:text-[36px];
+
+  @apply md:text-[46px];
+
+  @apply 2xl:text-[66px];
+}
+
+.stepWrapper {
+  @apply flex flex-row justify-evenly items-center;
+  @apply w-[95%] max-w-[1440px] mx-auto;
+
+  @apply mt-4 md:mt-8 md:gap-x-6 md:w-[90%];
+}
+
+.stepItem {
+  @apply absolute top-0 left-0 text-black text-center;
+  @apply flex flex-col justify-center items-center;
+  @apply p-[10px];
+
+  @apply 3xs:top-[4%];
+
+  @apply mid-2xs:top-[14%] mid-xs:left-[3%] mid-xs:p-5;
+}
+
+.stepTittle {
+  @apply font-boorsok text-center text-[12px] leading-[1];
+
+  @apply xxs:text-[16px];
+
+  @apply sm:text-[26px];
+
+  @apply lg:text-[36px];
+
+  @apply 2xl:text-[56px];
+}
