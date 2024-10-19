@@ -1,0 +1,60 @@
+.heroSection {
+  @apply absolute z-10 top-[0.5%];
+
+  @apply 3xs:top-[1%];
+
+  @apply left-[9%];
+}
+
+.pageTitle {
+  @apply font-knewave text-primaryOrange leading-[1.2] text-[15px];
+
+  @apply 3xs:text-[20px];
+
+  @apply xs:text-[30px];
+
+  @apply sm:leading-[1] sm:text-[40px];
+
+  @apply md:text-[60px];
+
+  @apply 2xl:text-[100px];
+}
+
+.pageSubTitle {
+  @apply font-knewave text-primaryOrange text-[10px];
+
+  @apply 3xs:text-[16px];
+
+  @apply sm:text-[26px];
+
+  @apply md:text-[36px];
+
+  @apply 2xl:text-[56px];
+}
+
+.pageDescription {
+  @apply text-[6px];
+
+  @apply xs:text-[10px];
+
+  @apply sm:text-[12px];
+
+  @apply md:text-[16px];
+
+  @apply w-[50%];
+}
+
+.learnMoreBtn {
+  @apply bg-primaryWhite block text-primaryOrange uppercase font-knewave text-[6px];
+  @apply cursor-pointer;
+
+  @apply xs:text-[10px] sm:text-[12px] md:text-[16px] xl:text-[20px];
+
+  @apply px-[6px] xs:px-[15px] sm:px-[25px] md:px-[30px];
+
+  @apply py-[1px] mt-[6px] md:mt-[20px];
+
+  @apply rounded-[9px] sm:rounded-[20px];
+
+  @apply border-black border-2;
+}
