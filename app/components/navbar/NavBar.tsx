@@ -1,14 +1,34 @@
 "use client";
 import { scrollToSection } from "@/app/utilts";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef, buttonRef]);
 
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
@@ -22,6 +42,7 @@ const Navbar = () => {
 
         <div className="sm:hidden">
           <button
+            ref={buttonRef}
             onClick={toggleMenu}
             className="text-white focus:outline-none"
           >
@@ -70,21 +91,21 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
+      <div ref={menuRef} className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
         <a
-          onClick={scrollToSection("aboutUs")}
+          onClick={scrollToSection("aboutUs", -300)}
           className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
         >
           About us
         </a>
         <a
-          onClick={scrollToSection("howToBuy", -60)}
+          onClick={scrollToSection("howToBuy", -280)}
           className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
         >
           How to buy
         </a>
         <a
-          onClick={scrollToSection("tokenomics", -80)}
+          onClick={scrollToSection("tokenomics", -250)}
           className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
         >
           Tokenomics
