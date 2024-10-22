@@ -42,8 +42,9 @@
 }
 
 .bubbleBottom {
-  @apply absolute top-[56%] left-[-2%] w-[80%];
+  @apply absolute top-[51%] left-[-2%] w-[80%];
 
+  @apply 3xs:top-[56%];
   @apply xxs:top-[64%];
   @apply xs:top-[66%];
   @apply mid-2xs:top-[76%];
@@ -87,7 +88,10 @@
 }
 
 .textBottom {
-  @apply absolute bottom-[7%] left-[6%];
+  @apply absolute bottom-[7%] left-[6%] w-[89%];
   @apply max-w-[749px];
+  
+  @apply 3xs:w-[85%];
+  
   @apply 3xl:bottom-[16%];
 }

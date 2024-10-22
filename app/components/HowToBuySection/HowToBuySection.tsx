@@ -10,24 +10,21 @@ const HOW_TO_BUY_CONTENT = [
     title: "dolor sit amet",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
             tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.`,
+            sapien.`,
     stepColor: "#F0B011",
   },
   {
     title: "dolor sit amet",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
             tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.`,
+            sapien.`,
     stepColor: "#F46023",
   },
   {
     title: "dolor sit amet",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
             tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.`,
+            sapien.`,
     stepColor: "#275CFE",
   },
 ];
