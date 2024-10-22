@@ -65,21 +65,32 @@
   @apply absolute top-[82%] left-0;
   @apply w-screen;
 
-  @apply 3xs:top-[82.5%];
   @apply xs:top-[83%];
-  @apply mid-2xs:top-[83.5%];
-  @apply sm:top-[83%];
-  @apply lg:top-[84%];
+  @apply md:top-[83.5%];
+  @apply xl:top-[84%];
+  @apply 2xl:top-[83.5%];
+  @apply extraLarge:top-[84%];
 }
 
 .socialTitle {
   @apply font-knewave text-white uppercase text-center text-[15px];
 
-  @apply 3xs:text-[26px];
+  @apply 3xs:text-[24px];
 
   @apply sm:text-[36px];
 
   @apply md:text-[41px];
 
   @apply 2xl:text-[61px];
+
+  @apply extraLarge:text-[76px];
+}
+
+.icon {
+  @apply w-[35px];
+  @apply sm:w-[41px];
+  @apply md:w-[52px];
+  @apply lg:w-[67px];
+  @apply 2xl:w-[88px];
+  @apply extraLarge:w-[118px];
 }

@@ -1,0 +1,7 @@
+.mobileLink {
+  @apply block uppercase text-center text-white py-2 px-4 hover:bg-gray-700;
+}
+
+.desktopLink {
+  @apply text-white uppercase hover:text-gray-400 transition-colors cursor-pointer;
+}

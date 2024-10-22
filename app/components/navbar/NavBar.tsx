@@ -2,6 +2,8 @@
 import { scrollToSection } from "@/app/utils";
 import { useState, useEffect, useRef } from "react";
 
+import styles from "./NavBar.module.scss";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -34,7 +36,7 @@ const Navbar = () => {
     <nav className="bg-black p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between sm:justify-center gap-x-8">
         <div
-          className="text-white text-2xl font-bold"
+          className="text-white text-2xl font-bold cursor-pointer"
           onClick={scrollToSection("hero")}
         >
           FVD
@@ -66,26 +68,23 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center space-x-6">
           <a
             onClick={scrollToSection("aboutUs")}
-            className="text-white uppercase hover:text-gray-400 transition-colors"
+            className={styles.desktopLink}
           >
             About us
           </a>
           <a
             onClick={scrollToSection("howToBuy", -60)}
-            className="text-white uppercase hover:text-gray-400 transition-colors"
+            className={styles.desktopLink}
           >
             How to buy
           </a>
           <a
             onClick={scrollToSection("tokenomics", -80)}
-            className="text-white uppercase hover:text-gray-400 transition-colors"
+            className={styles.desktopLink}
           >
             Tokenomics
           </a>
-          <a
-            onClick={scrollToSection("social")}
-            className="text-white uppercase hover:text-gray-400 transition-colors"
-          >
+          <a onClick={scrollToSection("social")} className={styles.desktopLink}>
             Social
           </a>
         </div>
@@ -94,26 +93,23 @@ const Navbar = () => {
       <div ref={menuRef} className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
         <a
           onClick={scrollToSection("aboutUs", -300)}
-          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+          className={styles.mobileLink}
         >
           About us
         </a>
         <a
           onClick={scrollToSection("howToBuy", -280)}
-          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+          className={styles.mobileLink}
         >
           How to buy
         </a>
         <a
           onClick={scrollToSection("tokenomics", -250)}
-          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
+          className={styles.mobileLink}
         >
           Tokenomics
         </a>
-        <a
-          onClick={scrollToSection("social")}
-          className="block uppercase text-center text-white py-2 px-4 hover:bg-gray-700"
-        >
+        <a onClick={scrollToSection("social")} className={styles.mobileLink}>
           Social
         </a>
       </div>

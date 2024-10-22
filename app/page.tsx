@@ -11,6 +11,7 @@ import styles from "./homepage.module.scss";
 import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
 import TokenomicsSection from "./components/TokenomicsSection/TokenomicsSection";
 import { scrollToSection } from "./utils";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -52,17 +53,24 @@ export default function Home() {
 
         <section id="social" className={styles.socialSection}>
           <p className={styles.socialTitle}>our social</p>
-          <div className="flex flex-row justify-center items-center">
-            {/* <Image
-              src={xIcon}
-              alt="tokenomics-bubble-2"
-              quality={100}
-            />
-            <Image
-              src={telegramIcon}
-              alt="tokenomics-bubble-2"
-              quality={100}
-            /> */}
+          <div className="flex flex-row justify-center items-center gap-x-2 xl:gap-x-9">
+            <Link href="https://x.com" target="_blank">
+              <Image
+                src={xIcon}
+                alt="tokenomics-bubble-2"
+                quality={100}
+                className={styles.icon}
+              />
+            </Link>
+
+            <Link href="https://telegram.org" target="_blank">
+              <Image
+                src={telegramIcon}
+                alt="tokenomics-bubble-2"
+                quality={100}
+                className={styles.icon}
+              />
+            </Link>
           </div>
         </section>
       </div>

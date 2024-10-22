@@ -13,11 +13,13 @@
   @apply md:text-[36px];
 
   @apply 2xl:text-[56px];
+
+  @apply extraLarge:text-[76px];
 }
 
 .bubbleTop {
   @apply absolute top-[17%] left-[-6%] w-[87%];
-  
+
   @apply sm:top-[29%];
   @apply md:top-[40%];
   @apply 2xl:top-[66%];
