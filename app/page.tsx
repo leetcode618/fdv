@@ -3,12 +3,14 @@ import Image from "next/image";
 import Navbar from "./components/navbar/NavBar";
 
 import fullPageBgr from "./images/background.png";
+import xIcon from "./images/X-icon.png";
+import telegramIcon from "./images/telegram-icon.png";
 
 import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import styles from "./homepage.module.scss";
 import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
 import TokenomicsSection from "./components/TokenomicsSection/TokenomicsSection";
-import { scrollToSection } from "./utilts";
+import { scrollToSection } from "./utils";
 
 export default function Home() {
   return (
@@ -51,8 +53,16 @@ export default function Home() {
         <section id="social" className={styles.socialSection}>
           <p className={styles.socialTitle}>our social</p>
           <div className="flex flex-row justify-center items-center">
-            <p>icon1</p>
-            <p>icon2</p>
+            {/* <Image
+              src={xIcon}
+              alt="tokenomics-bubble-2"
+              quality={100}
+            />
+            <Image
+              src={telegramIcon}
+              alt="tokenomics-bubble-2"
+              quality={100}
+            /> */}
           </div>
         </section>
       </div>

@@ -43,7 +43,6 @@ export default function HowToBuySection() {
             <Image
               src={howToBuyBubble}
               alt="how-to-buy-bubble"
-              priority
               quality={100}
             />
 

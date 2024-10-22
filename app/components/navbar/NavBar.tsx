@@ -1,5 +1,5 @@
 "use client";
-import { scrollToSection } from "@/app/utilts";
+import { scrollToSection } from "@/app/utils";
 import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {

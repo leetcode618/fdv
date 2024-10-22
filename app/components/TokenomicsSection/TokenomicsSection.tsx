@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import topBubble from "../../images/tokenomics-bubble-1.png";
+import centerBubble from "../../images/tokenomics-bubble-2.png";
 import bottomBubble from "../../images/tokenomics-bubble-3.png";
 
 import styles from "./TokenomicsSection.module.scss";
@@ -17,7 +18,6 @@ export default function TokenomicsSection() {
           <Image
             src={topBubble}
             alt="tokenomics-bubble-1"
-            priority
             quality={100}
           />
           <p className={classNames(styles.textInBubble, styles.textTop)}>
@@ -30,9 +30,8 @@ export default function TokenomicsSection() {
       <div className={styles.bubbleCenter}>
         <div className="relative">
           <Image
-            src={bottomBubble}
+            src={centerBubble}
             alt="tokenomics-bubble-2"
-            priority
             quality={100}
           />
           <p className={classNames(styles.textInBubble, styles.textCenter)}>
@@ -47,7 +46,6 @@ export default function TokenomicsSection() {
           <Image
             src={bottomBubble}
             alt="tokenomics-bubble-3"
-            priority
             quality={100}
           />
           <p className={classNames(styles.textInBubble, styles.textBottom)}>
