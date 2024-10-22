@@ -59,8 +59,10 @@
 }
 
 .textInBubble {
-  @apply text-[5px] text-black font-boorsok w-[85%] max-w-[840px];
+  @apply text-[4px] text-black font-boorsok w-[85%] max-w-[840px];
 
+  @apply 3xs:text-[5px];
+  
   @apply xxs:text-[6px];
 
   @apply xs:text-[8px];
