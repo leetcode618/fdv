@@ -9,16 +9,18 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get a Wallet",
     description: (
       <>
-        Download{" "}
-        <Link
-          href="https://phantom.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#F0B011] hover:underline"
-        >
-          Phantom
-        </Link>{" "}
-        or your wallet of choice
+        <div className="mt-8 text-4xl">
+          Download{" "}
+          <Link
+            href="https://phantom.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#F0B011] hover:underline"
+          >
+            Phantom
+          </Link>{" "}
+          or your wallet of choice.
+        </div>
       </>
     ),
     stepColor: "#F0B011",
@@ -56,8 +58,10 @@ const HOW_TO_BUY_CONTENT = [
     title: "Buy $FDV!",
     description: (
       <>
-        Connect your wallet, paste the token address above, and swap some SOL
-        for your first bag of $FDV.
+        <div className="text-2xl mt-6">
+          Connect your wallet, paste the token address above, and swap some SOL
+          for your first bag of $FDV.
+        </div>
       </>
     ),
     stepColor: "#275CFE",

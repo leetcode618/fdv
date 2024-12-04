@@ -31,7 +31,7 @@ export default function Home() {
           <h1 className={`textWhiteBorder ${styles.pageTitle}`}>
             Hi!{" "}
             <span className={`textWhiteBorder ${styles.pageSubTitle}`}>
-              I&apos;m Freddie Da Vinci,
+              Im Freddie Da Vinci,
             </span>
           </h1>
 
@@ -52,7 +52,7 @@ export default function Home() {
         <section id="social" className={styles.socialSection}>
           <p className={styles.socialTitle}>our social</p>
           <div className="flex flex-row justify-center items-center gap-x-2 xl:gap-x-9">
-            <Link href="https://x.com" target="_blank">
+            <Link href="https://x.com/FDVonsol" target="_blank">
               <Image
                 src={xIcon}
                 alt="tokenomics-bubble-2"
@@ -61,7 +61,7 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="https://telegram.org" target="_blank">
+            <Link href="https://t.co/taNxGpEXFB" target="_blank">
               <Image
                 src={telegramIcon}
                 alt="tokenomics-bubble-2"
