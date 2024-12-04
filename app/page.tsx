@@ -9,7 +9,6 @@ import telegramIcon from "./images/telegram-icon.png";
 import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 import styles from "./homepage.module.scss";
 import HowToBuySection from "./components/HowToBuySection/HowToBuySection";
-import TokenomicsSection from "./components/TokenomicsSection/TokenomicsSection";
 import { scrollToSection } from "./utils";
 import Link from "next/link";
 
@@ -32,7 +31,7 @@ export default function Home() {
           <h1 className={`textWhiteBorder ${styles.pageTitle}`}>
             Hi!{" "}
             <span className={`textWhiteBorder ${styles.pageSubTitle}`}>
-              I'm Freddie Da Vinci,
+              I&apos;m Freddie Da Vinci,
             </span>
           </h1>
 

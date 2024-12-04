@@ -20,7 +20,7 @@ export const boorsok = localFont({
 });
 
 export const lilita = localFont({
-  src: "./fonts/LilitaOne-regular.ttf",
+  src: "./fonts/LilitaOne-Regular.ttf",
   variable: "--font-lilita",
 });
 

@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
 
-import aboutUsBubble from "../../images/about-us-bubble.png";
 import aboutUsMonitorScreen from "../../images/about-us.png";
 import buyNowMeme from "../../images/buy-now-meme.png";
 
-import classNames from "classnames";
 import styles from "./AboutUsSection.module.scss";
 
 export default function AboutUsSection() {
