@@ -22,42 +22,18 @@ export default function AboutUsSection() {
           />
           <div className="absolute top-0 left-0 p-1 xxs:p-2 sm:p-5 text-[7px]">
             <p className={`textBlackBorder ${styles.aboutUsTitle}`}>about us</p>
-            <p className={`pageDescription ${styles.aboutUsDescription}`}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              id tristique eros. Nunc a augue vel ipsum porttitor pellentesque a
-              eget sapien. Ut eu turpis feugiat, porttitor magna tincidunt,
-              viverra metus.
+            <p
+              className={`pageDescription font-lilita ${styles.aboutUsDescription}`}
+            >
+              You’ve seen coins with sky-high fully diluted valuations, where
+              VCs and early investors hold all the power, dumping on everyone
+              else.  FDV is different. I’m 100% non-VC-backed, and my mission is
+              simple: start a paradigm shift that changes the game on how crypto
+              has gone since the start. Every coin has a FDV.  We are all FDV.
             </p>
           </div>
         </div>
       </section>
-
-      <div className={styles.aboutUsSpeech}>
-        <div className="relative">
-          <Image
-            src={aboutUsBubble}
-            alt="about-us-bubble"
-            priority
-            quality={100}
-            className={styles.aboutUsBubble}
-          />
-
-          <p
-            className={`pageDescription textInBubble ${classNames(
-              styles.aboutUsDescription,
-              styles.textInBubbleWrapper
-            )}`}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer id tristique eros. Nunc a augue vel ipsum porttitor
-            pellentesque a eget sapien. Ut eu turpis feugiat, porttitor magna
-            tincidunt, viverra metus.
-          </p>
-        </div>
-      </div>
 
       <Image
         src={buyNowMeme}

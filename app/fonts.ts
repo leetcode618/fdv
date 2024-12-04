@@ -19,6 +19,16 @@ export const boorsok = localFont({
   variable: "--font-boorsok",
 });
 
+export const lilita = localFont({
+  src: "./fonts/LilitaOne-regular.ttf",
+  variable: "--font-lilita",
+});
+
+export const chillax = localFont({
+  src: "./fonts/Chillax-Bold.woff2",
+  variable: "--font-chillax",
+});
+
 export const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

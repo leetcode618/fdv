@@ -56,6 +56,7 @@ body {
 
 .textInBubble {
   @apply text-[5px];
+  @apply max-w-[60%];
 
   @apply xxs:text-[6px];
 

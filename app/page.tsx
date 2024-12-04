@@ -29,15 +29,15 @@ export default function Home() {
         />
 
         <section className={styles.heroSection} id="hero">
-          <h1 className={`textWhiteBorder ${styles.pageTitle}`}>Lorem ipsum</h1>
-          <h3 className={`textWhiteBorder ${styles.pageSubTitle}`}>
-            dolor sit amet
-          </h3>
-          <p className="pageDescription">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien. Ut eu turpis feugiat, porttitor magna tincidunt, viverra
-            metus.
+          <h1 className={`textWhiteBorder ${styles.pageTitle}`}>
+            Hi!{" "}
+            <span className={`textWhiteBorder ${styles.pageSubTitle}`}>
+              I'm Freddie Da Vinci,
+            </span>
+          </h1>
+
+          <p className="mt-4 text-2xl  font-chillax">
+            but my friends call me FDV for short.
           </p>
           <button
             className={styles.learnMoreBtn}
@@ -49,7 +49,6 @@ export default function Home() {
 
         <AboutUsSection />
         <HowToBuySection />
-        <TokenomicsSection />
 
         <section id="social" className={styles.socialSection}>
           <p className={styles.socialTitle}>our social</p>

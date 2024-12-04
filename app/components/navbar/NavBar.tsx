@@ -39,7 +39,7 @@ const Navbar = () => {
           className="text-white text-2xl font-bold cursor-pointer"
           onClick={scrollToSection("hero")}
         >
-          FVD
+          FDV
         </div>
 
         <div className="sm:hidden">

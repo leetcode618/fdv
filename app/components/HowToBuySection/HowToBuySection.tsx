@@ -7,24 +7,18 @@ import styles from "./HowToBuySection.module.scss";
 
 const HOW_TO_BUY_CONTENT = [
   {
-    title: "dolor sit amet",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien.`,
+    title: "Get a Wallet",
+    description: `Download Phantom or your wallet of choice`,
     stepColor: "#F0B011",
   },
   {
-    title: "dolor sit amet",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien.`,
+    title: "Get some SOL",
+    description: `You will need some SOL to buy $FDV.  You can buy some in the Phantom app, or deposit SOL to your wallet from your crypto exchange of choice.  Then, swap your SOL on a DEX like Raydium, or Jupiter to get your first bag.`,
     stepColor: "#F46023",
   },
   {
-    title: "dolor sit amet",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id
-            tristique eros. Nunc a augue vel ipsum porttitor pellentesque a eget
-            sapien.`,
+    title: "Buy $FDV!",
+    description: `Connect your wallet, paste the token address above, and swap some SOL for your first bag of $FDV.`,
     stepColor: "#275CFE",
   },
 ];
@@ -37,11 +31,7 @@ export default function HowToBuySection() {
       <div className={styles.stepWrapper}>
         {HOW_TO_BUY_CONTENT.map((item, index) => (
           <div className="relative" key={index}>
-            <Image
-              src={howToBuyBubble}
-              alt="how-to-buy-bubble"
-              quality={100}
-            />
+            <Image src={howToBuyBubble} alt="how-to-buy-bubble" quality={100} />
 
             <div className={styles.stepItem}>
               <p
