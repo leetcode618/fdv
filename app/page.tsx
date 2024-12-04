@@ -35,7 +35,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="mt-4 text-2xl  font-chillax">
+          <p className="mt-4 lg:text-4xl  font-chillax">
             but my friends call me FDV for short.
           </p>
           <button

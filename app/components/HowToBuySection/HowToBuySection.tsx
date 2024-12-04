@@ -9,7 +9,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get a Wallet",
     description: (
       <>
-        <div className="mt-8 text-4xl">
+        <div className="mt-8 xl:text-4xl">
           Download{" "}
           <Link
             href="https://phantom.app/"
@@ -29,27 +29,29 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get some SOL",
     description: (
       <>
-        You will need some SOL to buy $FDV. You can buy some in the Phantom app,
-        or deposit SOL to your wallet from your crypto exchange of choice. Then,
-        swap your SOL on a DEX like{" "}
-        <Link
-          href="https://raydium.io/swap/?inputMint=sol&outputMint=DAMpC91BA8JnaXCVTkACFb4js4dkLfrKr16e53fmpump"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#F46023] hover:underline"
-        >
-          Raydium
-        </Link>
-        , or{" "}
-        <Link
-          href="https://jup.ag/swap/SOL-DAMpC91BA8JnaXCVTkACFb4js4dkLfrKr16e53fmpump"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#275CFE] hover:underline"
-        >
-          Jupiter
-        </Link>{" "}
-        to get your first bag.
+        <div className="text-[7.2px] lg:text-xl">
+          You will need some SOL to buy $FDV. You can buy some in the Phantom
+          app, or deposit SOL to your wallet from your crypto exchange of
+          choice. Then, swap your SOL on a DEX like{" "}
+          <Link
+            href="https://raydium.io/swap/?inputMint=sol&outputMint=DAMpC91BA8JnaXCVTkACFb4js4dkLfrKr16e53fmpump"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#F46023] hover:underline"
+          >
+            Raydium
+          </Link>
+          , or{" "}
+          <Link
+            href="https://jup.ag/swap/SOL-DAMpC91BA8JnaXCVTkACFb4js4dkLfrKr16e53fmpump"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#275CFE] hover:underline"
+          >
+            Jupiter
+          </Link>{" "}
+          to get your first bag.
+        </div>
       </>
     ),
     stepColor: "#F46023",
@@ -58,7 +60,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Buy $FDV!",
     description: (
       <>
-        <div className="text-2xl mt-6">
+        <div className="lg:text-2xl lg:mt-6">
           Connect your wallet, paste the token address above, and swap some SOL
           for your first bag of $FDV.
         </div>
@@ -88,7 +90,7 @@ export default function HowToBuySection() {
                 0{index + 1}
               </p>
               <p className={styles.stepTittle}>{item.title}</p>
-              <div className="textInBubble mt-4">{item.description}</div>
+              <div className="textInBubble lg:mt-4">{item.description}</div>
             </div>
           </div>
         ))}

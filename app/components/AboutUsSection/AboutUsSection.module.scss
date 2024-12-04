@@ -44,7 +44,8 @@
 
 .aboutUsDescription {
   @apply w-full text-justify text-black;
-
+  @apply text-[8px];
+  @apply 2xl:text-[23px];
   @apply md:font-bold;
 }
 
