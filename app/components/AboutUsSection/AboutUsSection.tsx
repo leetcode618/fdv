@@ -38,9 +38,10 @@ export default function AboutUsSection() {
             >
               You’ve seen coins with sky-high fully diluted valuations, where
               VCs and early investors hold all the power, dumping on everyone
-              else.  FDV is different. I’m 100% non-VC-backed, and my mission is
+              else.
+              <br /> FDV is different. I’m 100% non-VC-backed, and my mission is
               simple: start a paradigm shift that changes the game on how crypto
-              has gone since the start. Every coin has a FDV.  We are all FDV.
+              has gone since the start. Every coin has a FDV. We are all FDV.
             </p>
           </div>
         </div>
