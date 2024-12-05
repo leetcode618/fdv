@@ -34,7 +34,7 @@ export default function AboutUsSection() {
           <div className="absolute top-0 left-0 p-1 xxs:p-2 sm:p-5 text-[7px]">
             <p className={`textBlackBorder ${styles.aboutUsTitle}`}>about us</p>
             <p
-              className={`pageDescription font-lilita ${styles.aboutUsDescription} space-y-3`}
+              className={`pageDescription font-lilita ${styles.aboutUsDescription} space-y-1 lg:space-y-3`}
             >
               <div className="leading-relaxed">
                 You&apos;ve seen coins with sky-high fully diluted valuations,
