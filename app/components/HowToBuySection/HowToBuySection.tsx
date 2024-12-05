@@ -90,7 +90,9 @@ export default function HowToBuySection() {
                 0{index + 1}
               </p>
               <p className={styles.stepTittle}>{item.title}</p>
-              <div className="textInBubble md:mt-4">{item.description}</div>
+              <div className="textInBubble mt-1 md:mt-4">
+                {item.description}
+              </div>
             </div>
           </div>
         ))}
