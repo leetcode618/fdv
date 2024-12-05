@@ -34,19 +34,19 @@ export default function AboutUsSection() {
           <div className="absolute top-0 left-0 p-1 xxs:p-2 sm:p-5 text-[7px]">
             <p className={`textBlackBorder ${styles.aboutUsTitle}`}>about us</p>
             <p
-              className={`pageDescription font-lilita ${styles.aboutUsDescription} space-y-1 lg:space-y-3`}
+              className={`pageDescription font-lilita ${styles.aboutUsDescription} text-center space-y-1 lg:space-y-3`}
             >
-              <div className="leading-relaxed">
+              <div className="leading-relaxed text-center">
                 You&apos;ve seen coins with sky-high fully diluted valuations,
                 where VCs and early investors hold all the power, dumping on
                 everyone else.
               </div>
-              <div className="leading-relaxed">
+              <div className="leading-relaxed text-center">
                 FDV is different. I&apos;m 100% non-VC-backed, and my mission is
                 simple: start a paradigm shift that changes the game on how
                 crypto has gone since the start.
               </div>
-              <div className="leading-relaxed">
+              <div className="leading-relaxed text-center">
                 Every coin has a FDV. We are all FDV.
               </div>
             </p>
