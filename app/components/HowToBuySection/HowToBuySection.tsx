@@ -9,7 +9,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get a Wallet",
     description: (
       <>
-        <div className="mt-8 xl:text-4xl">
+        <div className="mt-4 md:text-lg lg:text-xl xl:text-4xl">
           Download{" "}
           <Link
             href="https://phantom.app/"
@@ -29,7 +29,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get some SOL",
     description: (
       <>
-        <div className="text-[7.2px] lg:text-xl">
+        <div className="text-[6.2px] md:text-[0.7rem] lg:text-[.89rem] xl:text-[0.9rem] 2xl:text-[1.1rem]">
           You will need some SOL to buy $FDV. You can buy some in the Phantom
           app, or deposit SOL to your wallet from your crypto exchange of
           choice. Then, swap your SOL on a DEX like{" "}
@@ -60,7 +60,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Buy $FDV!",
     description: (
       <>
-        <div className="lg:text-2xl lg:mt-6">
+        <div className="md:text-md lg:text-[1rem] xl:text-2xl mt-2 lg:mt-6">
           Connect your wallet, paste the token address above, and swap some SOL
           for your first bag of $FDV.
         </div>
@@ -90,7 +90,7 @@ export default function HowToBuySection() {
                 0{index + 1}
               </p>
               <p className={styles.stepTittle}>{item.title}</p>
-              <div className="textInBubble lg:mt-4">{item.description}</div>
+              <div className="textInBubble md:mt-4">{item.description}</div>
             </div>
           </div>
         ))}

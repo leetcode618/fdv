@@ -43,9 +43,12 @@
 }
 
 .aboutUsDescription {
-  @apply w-full text-justify text-black;
-  @apply text-[8px];
-  @apply 2xl:text-[23px];
+  @apply w-full text-justify text-black mt-2;
+  @apply text-[6.4px];
+  @apply lg:mt-0;
+  @apply md:text-[11px];
+  @apply lg:text-[16px];
+  @apply 2xl:text-[19px];
   @apply md:font-bold;
 }
 

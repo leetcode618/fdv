@@ -31,7 +31,7 @@ export default function Home() {
           <h1 className={`textWhiteBorder ${styles.pageTitle}`}>
             Hi!{" "}
             <span className={`textWhiteBorder ${styles.pageSubTitle}`}>
-              Im Freddie Da Vinci,
+              Im Freddie Da Vinci
             </span>
           </h1>
 
