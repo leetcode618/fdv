@@ -33,10 +33,11 @@
 
 .stepTittle {
   @apply font-boorsok text-center text-[12px] leading-[1];
+  @apply text-[11px];
+  @apply xxs:text-[11px];
+  @apply xs:text-[12.2px];
 
-  @apply xxs:text-[16px];
-
-  @apply sm:text-[26px];
+  @apply sm:text-[20px];
 
   @apply lg:text-[36px];
 

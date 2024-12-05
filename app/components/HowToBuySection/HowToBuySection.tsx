@@ -29,7 +29,7 @@ const HOW_TO_BUY_CONTENT = [
     title: "Get some SOL",
     description: (
       <>
-        <div className="text-[6.2px] md:text-[0.7rem] lg:text-[.89rem] xl:text-[0.9rem] 2xl:text-[1.1rem]">
+        <div className="text-[4.5px] xs:text-[6.2px] md:text-[0.7rem] lg:text-[.89rem] xl:text-[0.9rem] 2xl:text-[1.1rem]">
           You will need some SOL to buy $FDV. You can buy some in the Phantom
           app, or deposit SOL to your wallet from your crypto exchange of
           choice. Then, swap your SOL on a DEX like{" "}
